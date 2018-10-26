@@ -9,3 +9,4 @@ alias docker-purge-c='docker ps -qf status=exited | xargs -r docker rm'         
 alias docker-purge-all='docker-purge-i && docker-purge-v && docker-purge-c'
 alias upgrade-docker-compose='pip2 install --user docker-compose --upgrade'
 alias docker-ngrep=sudo ngrep -d docker0 port 6543
+alias docker-prune='docker system prune'
